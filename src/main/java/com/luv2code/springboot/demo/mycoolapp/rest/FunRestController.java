@@ -12,4 +12,21 @@ public class FunRestController {
     public String sayHello() {
         return "Hello World";
     }
+
+    // expose a new endpoint for "workout"
+
+    @GetMapping("/workout")
+    public String getDailyWorkout() {
+        return "Run hard 5k!";
+    }
+
+    @GetMapping("/something")
+    public String getSomethingElse() {
+        return "Something else!";
+    }
+
+    @GetMapping("/another")
+    public String getSomethingAnother() {
+        return "Something another else!";
+    }
 }
